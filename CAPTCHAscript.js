@@ -612,7 +612,7 @@ const findRandomElement = document.getElementById('find_random');
 const arrImgNumbers = [0,1,2,3,4,5];
 
 let arrChosenImgs = document.getElementsByClassName('gallery_img');
-let shuffledCaptcha = captchaTasks.sort(() => Math.random() - .1);
+let shuffledCaptcha = captchaTasks.sort(() => Math.random() - .5);
 
 let counter = 0;
 let successMark = 0, errorMark = 0;
@@ -682,7 +682,7 @@ buttonRepeat.addEventListener('click', () => {
   captchaSuccess.classList.add('hidden');
   captchaError.classList.add('hidden');
   resetHiddenImages();
-  shuffledCaptcha = captchaTasks.sort(() => Math.random() - .1);
+  shuffledCaptcha = captchaTasks.sort(() => Math.random() - .5);
   shuffledArrImgNumbers = arrImgNumbers.sort(() => Math.random() - .1);
   successMark = 0;
   errorMark = 0;
